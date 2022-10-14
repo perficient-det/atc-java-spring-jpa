@@ -1,0 +1,248 @@
+body {
+  font-family: "Domine", serif;
+  overflow: hidden;
+  background-color: rgb(29, 29, 29);
+}
+
+input {
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border: black 1px solid;
+}
+label {
+  margin-left: 10px;
+  font-size: 18px;
+
+}
+
+#product-info {
+    width: 55%;
+    display: inline-block;
+}
+
+#new-button {
+  font-size: 4rem;
+  font-family: "Merriweather", serif;
+  position: fixed;
+  right: 280px;
+  top: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+#new-button:hover {
+  cursor: pointer;
+}
+
+#add-product-form {
+  width: 35%;
+  background-color: white;
+  float: right;
+  margin: 3vw;
+}
+
+.submit-button {
+  font-family: "Domine", serif;
+  font-size: 16px;
+  background-color: rgb(255, 187, 0);
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  margin: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  background-color: rgb(255, 187, 0);
+  color: white;
+  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+#add-title {
+  font-size: 26px;
+}
+
+#main-title {
+  font-size: 6rem;
+  margin: 0;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+}
+
+#product-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 3vw;
+  background-color: white;
+}
+
+#details-modal {
+  background-color: white;
+  width: 600px;
+  left: calc(50% - 300px);
+  top: 100px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  margin: auto;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.details-button:hover {
+  cursor: pointer;
+}
+
+#backdrop {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  position: absolute;
+  overflow: hidden;
+}
+
+#add-product-close {
+  font-size: 30px;
+  color: white;
+  float: right;
+  position: relative;
+  top: 5px;
+  right: 15px;
+}
+
+.row {
+  margin: 5px;
+  padding: 5px;
+  padding-left: 15px;
+}
+.brand {
+  font-size: 20px;
+}
+
+.model {
+  font-size: 20px;
+}
+
+.upc {
+  color: rgb(83, 83, 83);
+  font-size: 12px;
+  font-style: italic;
+  padding-right: 30px;
+}
+
+.quantity {
+  font-size: 20px;
+  text-align: right;
+}
+
+th {
+  background-color: rgb(255, 187, 0);
+  color: white;
+  text-align: left;
+  font-size: 26px;
+  padding: 15px;
+}
+
+td {
+  padding: 5px 15px 5px 15px;
+}
+#quantity-header {
+  text-align: right;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 187, 0, 0.2);
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+#close-details-modal {
+  font-size: 30px;
+  color: white;
+  float: right;
+  position: relative;
+  top: 5px;
+  right: 15px;
+}
+
+#close-details-modal:hover {
+    cursor: pointer
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+#details-product-form {
+    padding: 0 15px 10px 15px;
+}
+
+.label {
+    font-size: 13px;
+    padding-bottom: 4px;
+    margin: 0;
+}
+
+.details {
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.market-item {
+    font-size: 18px;
+}
+
+.styled select {
+  background: transparent;
+  width: 150px;
+  font-size: 14px;
+  border: 1px solid #CCC;
+}
+.styled {
+  margin: 10px;
+  width: 120px;
+  height: 20px;
+  border: 1px solid #111;
+  border-radius: 3px;
+  overflow: hidden;
+}

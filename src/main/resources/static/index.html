@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Inventory Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Playfair+Display&display=swap"
+            rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+<div id="backdrop"></div>
+<div id="background">
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-details-modal">&#10006;</button>
+            <h1 class="title">Details</h1>
+            <form id="details-product-form">
+                <div class="left">
+                    <h2 class="label">Brand:</h2>
+                    <h1 class="details" id="details-brand"></h1>
+                    <h2 class="label">Model:</h2>
+                    <h1 class="details" id="details-model"></h1>
+                    <h2 class="label">UPC:</h2>
+                    <h1 class="details" id="details-upc"></h1>
+                    <h2 class="label">Quantity:</h2>
+                    <h1 class="details" id="details-quantity"></h1>
+                </div>
+                <div class="right">
+                    <h3>Markets:</h3>
+                    <div class="details" id="details-markets"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="title-div">
+        <h1 id="main-title">Inventory App</h1>
+    </div>
+    <div id="product-info">
+        <table id="product-table" aria-label="Product Listing">
+       		<tr><th>Item</th><th id='quantity-header'>Qty</th></tr>
+        </table>
+    </div>
+    <div id="add-product-form">
+        <div id="add-title-div">
+            <h1 class="title" id="add-title">New Item</h1>
+        </div>
+        <form id="add-product-form-submission">
+            <div class="left">
+                <label for="new-brand">Brand:</label><br />
+				<div id="brand-options" class="styled">
+				</div>
+				<br />           
+                <label for="new-model">Model:</label><br />
+                <input type="text" id="new-model" name="model" /><br />
+                <label for="new-upc">UPC:</label><br />
+                <input type="text" id="new-upc" name="upc" /><br />
+                <label for="new-quantity">Qty:</label><br />
+                <input type="text" id="new-quantity" name="quantity" /><br />
+                <input type="submit" class="submit-button" />
+            </div>
+            <!--            This is hardcoded for now in app.js. It will be pulled in from database in app.js-->
+            <div class="right" id="new-markets">
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
