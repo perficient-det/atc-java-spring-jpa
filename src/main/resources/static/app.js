@@ -90,7 +90,6 @@ $(document).ready(function () {
      var model = $("#new-model").val();
      var upc = $("#new-upc").val();
      var quantity = parseInt($("#new-quantity").val());
-//     var markets = $("#new-markets").val()
      var marketsArr = [];
      $("input:checkbox[name=market]:checked").each(function() {
         console.log($(this).val());
